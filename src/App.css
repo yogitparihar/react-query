@@ -7,11 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -27,12 +22,18 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-bar{
+  display: flex;
+    height: 80px;
+    background: lightgray;
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
 }
+
+.container{
+  position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
